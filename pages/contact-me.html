@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Contact this Guy</h1>
+    </div>
+    <nav>
+        <a href="./blog-page.html">Blog</a>
+        <a href="./about-me.html">About Me</a>
+        <a href="../welcome.html">Home</a>
+    </nav>
+    <div class="content">
+        <form class="form" action="thank-you.html">
+            <div class="row">
+                <div class="form-container-25">
+                    <label for="f-name">First Name</label>
+                </div>
+                <div class="form-container-75">
+                    <input type="text" id="f-name" name="firstName" placeholder="Enter your first name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-container-25">
+                    <label label="l-name">Last name</label>
+                </div>
+                <div class="form-container-75">
+                    <input type="text" id="l-name" name="lastName" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-container-25">
+                    <label for="reasonContact">Reason for Contacting</label>
+                </div>
+                <div class="form-container-75">
+                    <select id="reasonContact" name="reasonContact">
+                        <option value="none">Plese select a reason</option>
+                        <option value="jobOffer">Job Offer</option>
+                        <option value="advice">An option on the Website</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-container-25">
+                    <label for="other" id="other-label">Other Comments</label>
+                    <label for="jobOffer" id="job-label">Job Offer Information</label>
+                    <label for="advice" id="advice-label">Website Advice</label>
+                </div>
+                <div class="form-container-75">
+                    <textarea id="other" name="other" placeholder="Please tell me the reason for contacting :)" style="min-height: 200px;"></textarea>
+                    <textarea id="jobOffer" name="jobOffer" placeholder="Please tell me about the job offer here please :)" style="min-height: 200px;"></textarea>
+                    <textarea id="adviceInfo" name="advice" placeholder="Please tell me the advice you have to offer here :)" style="min-height: 200px;"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="../scripts/basic-scripts.js"></script>
+</body>
+
+</html>
